@@ -1,0 +1,136 @@
+/*cabeçalho do site*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Adicionando fonte no cabeçalho*/
+header, section h2, section h3, form button {
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+}
+/*Adicionando fonte nos textos do corpo do site*/
+body, input, textarea {
+    font-family: 'Roboto', sans-serif;
+}
+/*Estilizar Cabeçalho*/
+header {
+    padding: 16px 0;/*espaçamento interno e laterais*/
+    background-color: #182c61;/*cor de fundo*/
+    color: azure;/*cor do texto no cabeçalho*/
+}
+/*Letras do menu*/
+header nav li {
+    display: inline;/*apresentação na tela*/
+    margin-left: 16px;/*margem*/
+    font-size: 18px; /*aumentar fonte do menu*/
+}
+/*color do menu*/
+header nav li a {
+    color: azure;/* cor do menu*/
+    text-decoration: none;/*remover sublinhado do menu*/
+}
+/*estilizar container, conteiner no header servi para centralizar o conteúdo da pagína*/
+.container {
+    max-width: 1280px;/*largura*/
+    width: 100%;/*para centralizar na tela*/
+    margin: 0 auto;/*Centralizar topo e laterais*/
+}
+/*Colocar titulo e menu lado a lado*/
+header .container, section .container {
+    display: flex;
+    align-items: center;/*centralizar na vertical*/
+    justify-content: space-between;/*para jogar o menu oposto ao titulo da pagina*/
+}
+/*Resolusão das imagens*/
+.brands-list img {
+    height: 24px;
+}
+/*Editar Logos*/
+.brands-list li {
+    display: inline;
+    margin-right: 8px;
+}
+/*Sobrescrever propriedade align-itens: flex*/
+section .container{
+    align-items: flex-start;
+}
+/*Espaçamentos de imagens e texto*/
+section {
+    padding: 24px 0;
+}
+/*Espaçamento das margens*/
+section h2 {
+    margin-bottom: 16px;
+}
+/*Editar Paragrafo*/
+section {
+    color: #182c61;
+}
+/*Editar paragrafo da sessão*/
+section p{
+    margin-bottom: 8px;
+}
+/*Criando margem na direita da imagem */
+.store-front{
+    margin-right: 32px;
+}
+/*Imagens dos redes sociais*/
+.social-links img {
+    height: 24px;
+}
+/*Ajusta logo das redes sociais*/
+.social-links li {
+    display: inline;
+    margin-right: 8px;/*pequena margem a direita*/
+}
+/*Removendo traços da logo*/
+.social-links li a {
+    text-decoration: none;
+}
+/*Subsessões em colunas*/
+#contact .container {
+    display: block;
+}
+/*Modificar div dentro do container*/
+.contact-methods {
+    display: flex;
+    justify-content: space-between;/*Espaço entre subsessões*/
+}
+/*Estilizando Formulario*/
+form input, form textarea, form button  {
+    display: block;
+    width: 320px;/*Largura*/
+    margin-bottom: 8px;/*Margem dos elementos*/
+    padding: 8px;/*Espaçamento Interno*/
+}
+/*Desabilitar opção de aumentar o campo de mensagem*/
+form textarea {
+    resize: none;
+    height: 180px;/*aumentar area para digitar a mensagem*/
+}
+/*Alterando Título da subsessão*/
+section h3 {
+    margin-bottom: 16px;/*Margem Inferior*/
+}
+/*Customizando o Botão*/
+form button {
+    background-color: #182c61;/*cor do botão enviar*/
+    color: azure;/*Cor do texto do botão*/
+    border: none;
+    cursor: pointer;/*Altera a seta do mouse para a mão*/
+}
+/*Alterando cor do botão ao passar mouse*/
+form button:hover {
+    background-color: #1447d3;
+}
+/*Altera a cor do campo a ser preenchido*/
+input:focus, textarea:focus {
+    outline-color: #1447d3;
+}
+/*Regra para o rodapé*/
+footer {
+    background-color: #182c61;
+    color: azure;
+    padding: 16px 0;
+}
